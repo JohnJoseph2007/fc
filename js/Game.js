@@ -118,7 +118,7 @@ class Game{
 
        // Add code to update game state and display Game Over
 
-
+        console.log("work");
        
     }
 }
