@@ -98,6 +98,13 @@ class Game{
 
         // Add code to destroy fruits, calculate scores and
         // update the scores to the database
+        for(var i=0; i<fruitGroup.length; i++) {
+            if(fruitGroup.get(i).isTouching(players)) {
+                fruitGroup.get(i).destroy();
+                player.score++
+                player.update();
+            }
+        }
 
 
         // Add code for game end condition
